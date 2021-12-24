@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+     <h1>Ajouts les nouveaux livres</h1>
+    <div class="formulaire">
+    <form id="form" onsubmit="return putin()" method="dialog" name="regForm">
+        <div class="form">
+            <label class="label">Le titre de l'ouvrage</label>
+            <input type="text" name="titre"placeholder="entrer Le titre de l'ouvrage" id="th1" class="input">
+        </div>
+        
+        <div class="form">
+            <label class="label">Auteur de l'ouvrage</label>
+            <input type="text" name="auteur"placeholder="saisir l'auteur de l'ouvrage" id="th2"
+            class="input">
+        </div>
+        
+        <div class="form">
+            <label class="label">Le prix de l'ouvrage</label>
+            <input type="text" name="prix"placeholder="Entrer le prix" id="th3"
+            class="input">
+        </div>
+
+        <div class="form">
+            <label class="label">Email de l'auteur</label>
+            <input type="text" name="email" placeholder="Entrer email" id="mail"
+            class="input">
+        </div>
+        
+        <div class="form">
+            <label class="label">La date de publication</label>
+            <input type="date" name="date" placeholder=" password two" id="date"
+            class="input">
+        </div>
+        
+        
+        <div class="form">
+            <label class="label">La Langue de l'ouvrage</label>
+            <select id="langue" name="langue">
+                <option value="" id="select" hidden selected disabled>Saisir une langue</option>
+                <option value="arabe" >arabe</option>
+                <option value="anglais">anglais</option>
+                <option value="francais">Français</option>
+                <option value="espagnole">espagnole</option>
+            </select>
+        </div>
+        
+        <br>
+        <label>Type de l'ouvrage</label><br><br>
+             <input type="radio" id="Roman" name="Roman" value="Policier" class="radio">
+             <label for="Roman">Policier</label>
+             <input type="radio" id="Essai" name="Roman" value="Fantastique"class="radio">
+             <label for="Essai"> Fantastique</label>
+             <input type="radio" id="Bande-Dessinée" name="Roman" value="Bande-Dessinée" class="radio">
+             <label for="Bande-Dessinée">Bande Dessinée</label>
+        <input type="submit" class="submit" id="submit" value="Ajouter">
+        <button id="print" onclick="PrintDiv('tableau');">Imprimer</button>
+    </div>
+        </form>
+
+        <div id="tableau" class="tablee" >
+            <table id="table" border="1" align="center">
+                 <tr>
+                  <td> Titre </td>
+                  <td>Auteur</td>
+                  <td> Prix </td>
+                  <td>Email</td>
+                  <td> Date </td>
+                  <td> langue </td>
+                  <td>Type</td>
+                </tr> 
+
+               
+              </table>
+            </div> 
+    <script src="script.js"></script>
+</body>
+</html>
